@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 *{
     padding: 0;
@@ -5,73 +6,92 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 ul{
     list-style: none;
 }
 
-.home{
-    background-image: url("/img/bg.jpg");
-    background-size: contain;
-    height: 700px;
-    
-
-
+a{
+    text-decoration: none;
+}
+.subMenuContainer{
+    background: #0094CC;
 
 }
 
-.container{
+
+.subMenu{
+    border: 1px solid red;
     max-width: 1220px;
     margin: 0 auto;
-}
-
-.div{
     display: flex;
-   
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    
 }
 
-.imgHome{
-    flex: 1;
-    height: 500px;
-    background:  #101e70e3;
-    border-radius: 0px 0px 0px 550px;
-   
- 
 
+.subMenu div{
+    border: 1px solid red;
+    display: flex;
+    
+    
 }
 
-.txtHome{
-    flex: 1;
+.subMenu div p {
+    margin: 0px 5px;
+    
 }
 
+.phone {
+    transform: rotate(90deg);
+}
+
+.subMenu div i {
+    margin-right:5px;
+    font-size: 14px;
+}
 
 header{
-    border: 1px solid red;
-    padding: 10px 50px;
-    background: linear-gradient(0.25turn, #ffffff00, #101e70ee 50%);
+    background-color: #003764;
+    padding: 10px 0px; 
+    
 }
 
 header nav{
-    max-width: 1220px;
-    margin: 0 auto;
     border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 20px;
+
 }
 
-
 header nav ul{
-    border: 1px solid red;
     display: flex;
-
 }
 
 header nav ul li{
-    margin-left: 40px;
+    margin-left: 20px;
+   
 }
 
 header nav ul li a{
     color: #fff;
-    text-decoration: none;
-    
 }
+
+header nav ul li a:hover{
+   
+    font-weight: bold;
+    border-bottom: 3px solid #fff;
+}
+
+
+
