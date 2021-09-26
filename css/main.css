@@ -37,6 +37,11 @@ a{
     
 }
 
+@media screen and (max-width: 768px) {
+    .subMenu{
+        flex-direction: column;
+    }
+}
 
 .subMenu div{
     border: 1px solid red;
@@ -67,6 +72,8 @@ header{
 
 header nav{
     border: 1px solid red;
+    max-width: 1220px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,4 +101,67 @@ header nav ul li a:hover{
 }
 
 
+.mobile{
+   display: none;
+}
+
+.close{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile{
+        display: block;
+        padding-right: 20px;
+     }
+
+    header nav{
+        padding: 0;
+        
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.267);
+        width: 100%;
+        height: 100vh;
+        top: 130px;
+
+       
+
+       
+    }
+
+    
+
+    header nav ul li {
+       
+     
+        height: 50px;
+       
+        width: 100%;
+        margin: 0 auto;
+        background-color: #003764;
+        
+    }
+    header nav ul li a{
+        border: 1px solid #0094CC;
+        width: 100%;
+        height: 50px;
+        padding-left:30px ;
+        display: flex;
+        align-items: center;
+
+       
+    }
+
+    header nav ul li a:hover{
+        background-color: #0094CC;
+        border-bottom: none;
+    }
+
+    
+}
 
