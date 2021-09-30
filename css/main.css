@@ -18,7 +18,7 @@ a{
     text-decoration: none;
 }
 .subMenuContainer{
-    background: #0094CC;
+    background: #2F8CDC;
 
 }
 
@@ -65,7 +65,7 @@ a{
 }
 
 header{
-    background-color: #003764;
+    background-color: #fff;
     padding: 10px 0px; 
     
 }
@@ -91,13 +91,13 @@ header nav ul li{
 }
 
 header nav ul li a{
-    color: #fff;
+    color: #2A335A;
 }
 
 header nav ul li a:hover{
    
-    font-weight: bold;
-    border-bottom: 3px solid #fff;
+   
+    border-bottom: 3px solid #2A335A;
 }
 
 
