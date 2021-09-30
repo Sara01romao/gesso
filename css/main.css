@@ -107,7 +107,7 @@ header nav ul li a:hover{
 }
 
 .mobile i{
-    color:#fff;
+    color: #2A335A;
     font-size: 25px;
     cursor: pointer;
 }
@@ -118,7 +118,6 @@ header nav ul li a:hover{
 
    
 }
-
 
 
 @media screen and (max-width: 768px) {
@@ -184,3 +183,136 @@ header nav ul li a:hover{
 
 
 
+
+.home{
+    background-image: url("/img/bg2.png");
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homeContainer{
+    display: flex;
+    align-items: center;
+    max-width: 1220px;
+    margin: 0 auto;
+ 
+
+
+}
+
+.homeTxt{
+    width: 100%;
+    border: 1px solid red;
+    padding-left: 50px;
+}
+
+
+.homeTxt h1{
+    font-size: 50px;
+    color:#fff;
+    margin-top: 200px;
+
+}
+
+.homeTxt p{
+    color: #fff;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+
+.homeTxt button{
+    margin-top: 50px;
+    background:#002E75 ;
+    color: #fff;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.homeTxt button:hover{
+    background: #2F8CDC;
+}
+
+/**/
+
+.empresa{
+    margin-top: 30px;
+}
+
+
+.titulo h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.titulo hr{
+    height: 10px;
+    background: linear-gradient(270deg, rgba(55, 153, 237, 0.88) 21.03%, rgba(113, 55, 237, 0.3168) 100%);
+    border: none;
+}
+
+.empresa hr{
+    width: 125px;
+    margin: 0 auto;
+}
+
+.empresaTxt{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+
+}
+
+.empresaDiv1, .empresaDiv2{
+    flex: 1;
+    line-height: 1.5;
+    padding: 0px 30px;
+    margin-bottom: 50px;
+    border: 1px solid red;
+}
+
+.empresaDiv1 div {
+    border: 1px solid red;
+    max-width:300px ;
+
+    margin: 0px auto 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.empresaDiv1 div img{
+    width: 250px;
+}
+
+
+.empresaDiv2 h3{
+    color: #002E75;
+    font-style: italic;
+}
+
+
+.empresaDiv2 p{
+    font-size: 16px;
+   
+    
+}
+
+
+.empresaImg {
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 10px 10px rgba(55, 153, 237, 0.41));
+    padding: 0px 50px;
+}
+
+.empresaImg img{
+    width: 100%;
+    height: 212px;
+    object-fit: cover;
+}
