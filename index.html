@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.css">
     <!-- cdn font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -95,7 +97,7 @@
 
 
     <section class="info">
-        <div>
+        <div class="container">
             <div class="titulo">
                 <h2>Como Funciona?</h2>
                 <hr>
@@ -132,9 +134,82 @@
 
     </section>
 
+
+
+    <section class="servicos">
+        <div class="servicosContainer">
+            <div class="titulo">
+                <h2>Serviços</h2>
+                <hr>
+            </div>
+            <div class="cards">
+                <div class="card">
+
+                     <!-- Slider main container -->
+                     <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
    
-' <script src="./js/script.js"></script>
+                        <div class="swiper-slide"><img src="/img/f2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/f1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/f4.jpg" alt=""></div>
+                        ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                    <div class="txt">
+                        <h2>Forros</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quaerat placeat obcaecati cupiditate ad autem blanditiis veritatis minus, dolor iste excepturi iure, recusandae officiis nam fugit odio nulla suscipit laudantium.
+                        Incidunt vitae suscipit debitis deleniti repellat ullam ipsam, libero quis quo culpa exercitationem excepturi dicta tempore consequatur, maiores aut iure ex qui. Ipsum est illo sequi quidem ad porro voluptatum!</p>
+                        <button>Fazer Orçamento</button>
+                    </div>
+                 
+
+                </div>
+
+            </div>
+
+            <div>
+                <div>
+
+                   
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
    
-    
+    <script src="./js/script.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      
+       
+       
+
+        
+        });
+    </script>
+        
 </body>
 </html>
