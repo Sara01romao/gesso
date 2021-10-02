@@ -288,9 +288,29 @@ header nav ul li a:hover{
 }
 
 
-.empresaDiv1 div img{
+
+.empresaDiv1 div svg{
     width: 250px;
 }
+
+#logo{
+    animation: animationLogo 2s forwards ;/*nome, tempo, ritmo, parar no final*/
+    opacity: 0;
+
+}
+
+@keyframes animationLogo{
+    to{
+        
+        /* transform: rotate(360deg); */
+        
+        opacity: 1;
+
+    }
+}
+
+
+
 
 
 .empresaDiv2 h3{
@@ -410,7 +430,7 @@ color: #8B5BF0;
     border: 1px solid red;
     padding: 20px;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
-    background-image: url("/img/bg.jpg");
+   
     background-size: contain;
   
 
