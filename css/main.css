@@ -101,6 +101,23 @@ header nav ul li a:hover{
 }
 
 
+#logo{
+    animation: animationLogo 2s forwards ;/*nome, tempo, ritmo, parar no final*/
+    opacity: 0;
+
+}
+
+@keyframes animationLogo{
+    to{
+        
+        /* transform: rotate(360deg); */
+        
+        opacity: 1;
+
+    }
+}
+
+
 .mobile{
    display: none;
    
@@ -275,11 +292,11 @@ header nav ul li a:hover{
     line-height: 1.5;
     padding: 0px 30px;
     margin-bottom: 50px;
-    border: 1px solid red;
+
 }
 
 .empresaDiv1 div {
-    border: 1px solid red;
+    
     max-width:300px ;
 
     margin: 0px auto 30px;
@@ -289,27 +306,21 @@ header nav ul li a:hover{
 
 
 
-.empresaDiv1 div svg{
+.empresaDiv1 div img{
     width: 250px;
 }
 
-#logo{
-    animation: animationLogo 2s forwards ;/*nome, tempo, ritmo, parar no final*/
-    opacity: 0;
 
-}
-
-@keyframes animationLogo{
-    to{
-        
-        /* transform: rotate(360deg); */
-        
-        opacity: 1;
-
+@media screen and (max-width: 768px) {
+    .empresaDiv1 div img{
+        width: 200px;
     }
-}
-
-
+    
+    .empresaDiv1 {
+        padding: 0px;
+    }
+      
+  }
 
 
 
@@ -423,23 +434,46 @@ color: #8B5BF0;
 }
 
 
+
+
 .servicos .card{
-    
-    max-width: 900px;
-    margin: 50px auto;
-    border: 1px solid red;
+   
+    max-width: 1220px;
+    margin: 50px auto 70px;
+    /* border: 1px solid red; */
     padding: 20px;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
-   
+    border-radius: 10px;
     background-size: contain;
   
 
 }
 
-.swiper{
-    max-width: 900px;
-    height: 300px;
+.servicos .card h2{
+    color: #002E75;
+    font-size: 2rem;
 }
+
+.swiper{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+    border: 1px solid #002E75;
+   
+  }
+
+  .swiper-slide.swiper-slide-active{
+      opacity: 1;
+      border: 4px solid #002E75;
+      
+  } 
 
 .swiper-slide img {
     display: block;
@@ -447,7 +481,46 @@ color: #8B5BF0;
     height: 100%;
     object-fit: cover;
   }
-
   .servicos .txt{
-      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
+
+  .servicos .txt p{
+     
+     
+      padding: 20px 50px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .servicos .txt p{
+       
+       
+        padding: 20px ;
+    }
+      
+  }
+
+
+  .servicos .txt button{
+    
+    background:#002E75 ;
+    color: #fff;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    
+  }
+
+
+
+
+  .servicos .txt button:hover{
+    background: #2F8CDC;
+}
