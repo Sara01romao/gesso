@@ -222,6 +222,7 @@ header nav ul li a:hover{
     width: 100%;
     border: 1px solid red;
     padding-left: 50px;
+    
 }
 
 
@@ -252,7 +253,7 @@ header nav ul li a:hover{
 }
 
 .homeTxt button:hover{
-    background: #2F8CDC;
+    background: #021db8;
 }
 
 /**/
@@ -520,7 +521,7 @@ color: #8B5BF0;
 
 
   .servicos .txt button:hover{
-    background: #2F8CDC;
+    background: #021db8;
 }
 
 /**/
@@ -566,6 +567,7 @@ color: #8B5BF0;
 
 .formulario{
     flex: 1;
+   
   
 }
 
@@ -589,18 +591,69 @@ color: #8B5BF0;
     background-color: rgba(255, 255, 255, 0);
     padding: 5px 10px;
     font-size: 16px;
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .inputDiv textarea{
     max-width: 80%;
-    
+    height: 150px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 5px 10px;
+    overflow-y: auto;
+    resize: none;
 }
 
-.inputDiv input:focus{
-    outline: none;
+.inputDiv textarea::-webkit-scrollbar {
+    width: 5px;   
+              
+  }
+  
+  .inputDiv textarea::-webkit-scrollbar-track {
+    background: #8a5bf062; 
+    border-radius: 10px;        
+}
+
+.inputDiv textarea::-webkit-scrollbar-thumb {
+    background-color: #002E75;   
+    height: 50px; /* color of the scroll thumb */
+    border-radius: 20px;   
+       /* roundness of the scroll thumb */
+  }
+
+
+.inputDiv input:focus, textarea:focus{
+    outline: 2px solid #8B5BF0;
+}
+
+.formulario button{
+   
+    background:#002E75 ;
+    border: 3px solid #8B5BF0;
+    color: #fff;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+
 }
 
 
+.formulario button:hover{
+    background: #021db8;
+}
 
 .infoContatos{
     flex: 1;
