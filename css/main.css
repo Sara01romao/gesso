@@ -87,11 +87,13 @@ header nav ul{
 
 header nav ul li{
     margin-left: 20px;
+    
    
 }
 
 header nav ul li a{
     color: #2A335A;
+    font-size: 20px;
 }
 
 header nav ul li a:hover{
@@ -117,7 +119,6 @@ header nav ul li a:hover{
     }
 }
 
-
 .mobile{
    display: none;
    
@@ -131,9 +132,6 @@ header nav ul li a:hover{
 
 .close{
     display: none;
-
-
-   
 }
 
 
@@ -142,6 +140,10 @@ header nav ul li a:hover{
         display: block;
         padding-right: 20px;
      }
+    
+    header{
+        padding: 10px 20px;
+    }
 
     header nav{
         padding: 0;
@@ -154,15 +156,10 @@ header nav ul li a:hover{
         position: absolute;
         background-color: rgba(0, 0, 0, 0.267);
         width: 100%;
-        height: 100vh;
         top: 120px;
-
-       
-
-       
+        left: 0;
+        
     }
-
-    
 
     header nav ul li {
         margin-left: 0;
@@ -171,6 +168,7 @@ header nav ul li a:hover{
         background-color: #fff;
         
     }
+
     header nav ul li a{
         
         border: 1px solid #0094CC;
@@ -193,50 +191,48 @@ header nav ul li a:hover{
         display: none;
         
     }
-
-   
     
 }
 
-
-
-
 .home{
     background-image: url("/img/bg2.png");
-    height: 500px;
+    background-attachment: fixed;
+    height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    
 }
 
 .homeContainer{
     display: flex;
     align-items: center;
     max-width: 1220px;
+    width: 100%;
     margin: 0 auto;
- 
-
-
 }
 
 .homeTxt{
-    width: 100%;
-    border: 1px solid red;
-    padding-left: 50px;
-    
+
+    max-width: 1000px;
+    padding: 0px 30px;   
 }
 
 
 .homeTxt h1{
     font-size: 50px;
     color:#fff;
-    margin-top: 200px;
+    /* margin-top: 200px; */
 
 }
 
 .homeTxt p{
     color: #fff;
-    font-size: 18px;
-    max-width: 600px;
+    font-size: 24px;
+    max-width: 1000px;
+    line-height: 1.5;
+    margin-top: 20px;
 }
 
 
@@ -244,17 +240,19 @@ header nav ul li a:hover{
     margin-top: 50px;
     background:#002E75 ;
     color: #fff;
-    height: 40px;
-    width: 200px;
+    height: 50px;
+    width: 220px;
     border: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .homeTxt button:hover{
     background: #021db8;
 }
+
 
 /**/
 
@@ -283,16 +281,19 @@ header nav ul li a:hover{
 
 .empresaTxt{
     display: flex;
-    flex-wrap: wrap;
-    padding: 50px;
+    padding: 50px 30px;
+    
 
 }
+
+
 
 .empresaDiv1, .empresaDiv2{
     flex: 1;
     line-height: 1.5;
     padding: 0px 30px;
     margin-bottom: 50px;
+    font-size: 18px;
 
 }
 
@@ -313,11 +314,15 @@ header nav ul li a:hover{
 
 
 @media screen and (max-width: 768px) {
+    .empresaTxt{
+        flex-direction: column;
+    
+    }
     .empresaDiv1 div img{
         width: 200px;
     }
     
-    .empresaDiv1 {
+    .empresaDiv1, .empresaDiv2 {
         padding: 0px;
     }
       
@@ -328,21 +333,26 @@ header nav ul li a:hover{
 .empresaDiv2 h3{
     color: #002E75;
     font-style: italic;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.empresaDiv2 h3::after{
+    content: '';
+    height: 5px;
+    width: 160px;
+    background:#002E75 ;
+
 }
 
-
-.empresaDiv2 p{
-    font-size: 16px;
-   
-    
-}
 
 
 .empresaImg {
     display: flex;
     justify-content: center;
     filter: drop-shadow(0px 10px 10px rgba(55, 153, 237, 0.41));
-    padding: 0px 50px;
+    padding: 0px 30px;
 }
 
 .empresaImg img{
@@ -363,7 +373,7 @@ header nav ul li a:hover{
     background-image: url("/img/bgTextura.png");
     background-size: cover;
     height: auto;
-    padding: 50px;
+    padding: 50px 30px;
 }
 
 .info .titulo h2{
@@ -394,13 +404,14 @@ header nav ul li a:hover{
     margin-bottom: 30px;
 
 }
-
+.info .card:hover{
+    background: linear-gradient(70deg, rgb(212, 235, 255) 21.03%, rgb(195, 242, 250) 100%);
+   transform: rotate(1deg);
+}
 
 .info .card i{
    
 font-size: 50px;
-
-
 color: #8B5BF0;
 }
 
@@ -426,7 +437,7 @@ color: #8B5BF0;
 /**/
 
 .servicos{
-    padding: 50px;
+    padding: 50px 30px;
 }
 
 .servicos .titulo hr{
@@ -506,21 +517,19 @@ color: #8B5BF0;
 
 
   .servicos .txt button{
-    
+    margin-top: 50px;
     background:#002E75 ;
     color: #fff;
-    height: 40px;
-    width: 200px;
+    height: 50px;
+    width: 220px;
     border: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 20px;
     cursor: pointer;
+}
    
-    
-  }
-
-
-  .servicos .txt button:hover{
+.servicos .txt button:hover{
     background: #021db8;
 }
 
@@ -530,14 +539,14 @@ color: #8B5BF0;
     background-image: url("/img/bgTextura.png");
     background-size: cover;
     height: auto;
-    padding: 50px;
+    padding: 50px 30px;
+   
     
 }
 
 .contatos .container{
     max-width: 1220px;
     margin: 0 auto;
-    border: 1px solid rgb(0, 255, 64);
 }
 
 .contatos .titulo h2{
@@ -550,7 +559,6 @@ color: #8B5BF0;
 
 
 .infoContatos{
-    border: 3px solid rgb(117, 0, 128);
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
@@ -568,6 +576,7 @@ color: #8B5BF0;
 .formulario{
     flex: 1;
     padding: 20px;
+    margin-bottom: 50px;
    
   
 }
@@ -643,7 +652,7 @@ color: #8B5BF0;
     border: 3px solid #8B5BF0;
     color: #fff;
     height: 35px;
-    width: 200px;
+    width: 220px;
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -657,20 +666,18 @@ color: #8B5BF0;
     background: #021db8;
 }
 
+
+
 .txtContatos{
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    
 }
 
 .logoContatos {
-   
     margin: 0 auto;
-    border: 1px solid red;
     width: 240px;
     height: 100px;
 }
@@ -681,6 +688,7 @@ color: #8B5BF0;
 
 .txtmapa img{
     max-width: 100%;
+    margin: 10px 0px;
 }
 
 .txtmapa p{
