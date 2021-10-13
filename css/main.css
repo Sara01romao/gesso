@@ -749,3 +749,13 @@ color: #8B5BF0;
 }
 
 
+
+
+footer{
+    height: 30px;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 5px;
+}
