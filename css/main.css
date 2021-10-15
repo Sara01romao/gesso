@@ -373,7 +373,7 @@ header nav ul li a:hover{
 }
 
 .info{
-    background-image: url("/img/bgTextura.png");
+    background-image: url("../img/bgTextura.png");
     background-size: cover;
     height: auto;
     padding: 50px 30px;
@@ -539,7 +539,7 @@ color: #8B5BF0;
 /**/
 
 .contatos{
-    background-image: url("/img/bgTextura.png");
+    background-image: url("../img/bgTextura.png");
     background-size: cover;
     height: auto;
     padding: 50px 30px;
