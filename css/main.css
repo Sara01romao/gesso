@@ -198,7 +198,7 @@ header nav ul li a:hover{
 }
 
 .home{
-    background-image: url("/img/bg2.png");
+    background-image: url("../img/bg2.png");
     background-attachment: fixed;
     height: 600px;
     background-size: cover;
