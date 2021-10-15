@@ -34,7 +34,7 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 5px 20px;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     font-weight: bold;
     
@@ -578,7 +578,7 @@ color: #8B5BF0;
 
 .formulario{
     flex: 1;
-    padding: 20px;
+    padding: 20px 0px;
     margin-bottom: 50px;
    
   
@@ -704,7 +704,7 @@ color: #8B5BF0;
 }
 
 .txtmapa ul li{
-    margin: 5px;
+    margin: 5px 5px 5px 0px;
 }
 
 .redes{
