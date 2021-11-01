@@ -5,6 +5,14 @@
 </p>
 
 
+<h6 align="center">   View</h6>
+<br>
+
+<p align="center">
+  <img max-width="auto" height="auto"  src="https://user-images.githubusercontent.com/46323667/137519428-6d5e6f9d-0470-47bb-a8ef-15293375ecea.gif">
+</p>
+
+
 
 ## 💻  Sobre o Projeto
 Landing page para uma empresa que presta serviços de acabamento com gesso.  
@@ -22,11 +30,4 @@ JS
 Swiper js
 
 ```
-
-<h6 align="center">   Tela Desktop</h6>
-<br>
-
-<p align="center">
-  <img max-width="auto" height="auto"  src="https://user-images.githubusercontent.com/46323667/137519428-6d5e6f9d-0470-47bb-a8ef-15293375ecea.gif">
-</p>
 
