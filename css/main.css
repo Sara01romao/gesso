@@ -224,7 +224,7 @@ header nav ul li a:hover{
 
 
 .homeTxt h1{
-    font-size: 50px;
+    font-size: 3rem;
     color:#fff;
     /* margin-top: 200px; */
 
@@ -232,7 +232,7 @@ header nav ul li a:hover{
 
 .homeTxt p{
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem;
     max-width: 1000px;
     line-height: 1.5;
     margin-top: 20px;
@@ -256,6 +256,18 @@ header nav ul li a:hover{
     background: #021db8;
 }
 
+@media screen and (max-width:768px) {
+
+    .homeTxt h1{
+    
+
+    }
+
+.homeTxt p{
+    font-size: 1.2rem;
+}
+
+}
 
 /**/
 
@@ -733,8 +745,8 @@ color: #8B5BF0;
     right: 10px;
     top: 490px;
     background-color: #04d361;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -742,7 +754,7 @@ color: #8B5BF0;
     z-index: 9999;
 }
 .btnWhatsapp i{
-    font-size: 45px;
+    font-size: 30px;
     color: #fff;
 
 }
